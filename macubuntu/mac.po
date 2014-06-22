@@ -1,0 +1,2 @@
+msgid "Ubuntu Desktop"
+msgstr "Mac"

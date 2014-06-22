@@ -1,0 +1,92 @@
+#!/bin/sh
+
+WALLPAPER=`pwd`/MBuntu-Wallpapers.zip
+PIC_DIR=~/Pictures
+FONTSZIP=`pwd`/macfonts.zip
+LAUNCHERICON=`pwd`/launcher_bfb.png
+MAC_PO_FILE=`pwd`/mac.po
+
+echo "Set up repository for the necessary packages ..."
+sudo add-apt-repository ppa:docky-core/ppa
+sudo add-apt-repository ppa:noobslab/themes
+sudo add-apt-repository ppa:noobslab/apps
+sudo apt-get update
+
+echo "Extracting wallpaper to $PIC_DIR"
+unzip $WALLPAPER -d $PIC_DIR
+echo "Set wallpaper ..."
+echo "System Settings -> Appearance -> Wallpapers -> Pictures Folder -> + ..."
+echo "After done configuration, Press any key to continue ..."
+read -n 1
+
+echo ""
+echo "To install docky ..."
+sudo apt-get install docky
+echo "Config docky theme ..."
+echo "Docky -> Settings -> Theme -> Install & select 'Buyi-idocky' & check '3D Background'"
+echo "After done configuration, Press any key to continue ..."
+read -n 1
+
+echo ""
+echo "To install Mac OS X Lion Theme, Icons and cursors ..."
+sudo apt-get install mac-ithemes-v3 mac-icons-v3 unity-tweak-tool
+echo "Config theme, icons and cursors ..."
+echo "Unity Tweak Tool -> Theme -> Mbuntu-ac & Icons -> Mbuntu-osx & Cursor -> Mac-cursors"
+echo "After done configuration, Press any key to continue ..."
+read -n 1
+
+echo ""
+echo "To Apply MBuntu Splash ..."
+sudo apt-get install mbuntu-bscreen-v3
+echo "Done applying MBuntu splash!"
+
+echo ""
+echo "To Install MacBuntu theme for LightDM ..."
+sudo apt-get install mbuntu-lightdm-v3
+echo "Done installing MacBuntu theme for LightDM!"
+
+echo ""
+echo "To Install Indicator Synapse (Alternative to Spotlight) ..."
+sudo apt-get install indicator-synapse
+echo "Done installing Indicator Synapse!"
+
+echo ""
+echo "To Replace 'Ubuntu Desktop' text with 'Mac' on the Panel ..."
+pushd .
+cd /usr/share/locale/en/LC_MESSAGES; sudo msgfmt -o unity.mo $MAC_PO_FILE;rm ~/Mac.po; cd
+popd
+echo "Done replacing!"
+
+echo ""
+echo "To Replace Overlay Scroll-bars with Normal..."
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+echo "Done replacing!"
+
+echo ""
+echo "To Remove White Dots and Ubuntu Logo from Lock Screen..."
+sudo xhost +SI:localuser:lightdm
+sudo su lightdm -s /bin/bash
+gsettings set com.canonical.unity-greeter draw-grid false;exit
+sudo mv /usr/share/unity-greeter/logo.png /usr/share/unity-greeter/logo.png.backup
+echo "Done removing!"
+
+echo ""
+echo "To Change Apple Logo in Launcher ..."
+sudo mv $LAUNCHERICON /usr/share/unity/icons/
+echo "Done changing!"
+
+echo ""
+echo "To Install Monochrome icons for Libreoffice ..."
+sudo apt-get install libreoffice-style-sifr
+echo "'Tools' > 'Options' > 'LibreOffice' > 'View' and select 'Sifr' under 'Icon size and style'. "
+echo "After done configuration, Press any key to continue ..."
+read -n 1 
+
+echo ""
+echo "To Install Mac Fonts into /usr/share/fonts/mac"
+sudo mkdir -p /usr/share/fonts/mac
+sudo unzip $FONTSZIP -d /usr/share/fonts/mac
+sudo fc-cache -fv
+echo "Done installing mac fonts"
+
+echo "Congratulations! You did it!"
