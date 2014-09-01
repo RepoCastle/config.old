@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 for conf in `ls -d */ | cut -f1 -d'/'`; do
   setupfile=$conf/setup.sh

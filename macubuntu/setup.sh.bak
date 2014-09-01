@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 WALLPAPER=`pwd`/MBuntu-Wallpapers.zip
 PIC_DIR=~/Pictures
@@ -16,24 +16,21 @@ echo "Extracting wallpaper to $PIC_DIR"
 unzip $WALLPAPER -d $PIC_DIR
 echo "Set wallpaper ..."
 echo "System Settings -> Appearance -> Wallpapers -> Pictures Folder -> + ..."
-echo "After done configuration, Press any key to continue ..."
-read -n 1
+read -p "After done configuration, Press any key to continue ..."
 
 echo ""
 echo "To install docky ..."
 sudo apt-get install docky
 echo "Config docky theme ..."
 echo "Docky -> Settings -> Theme -> Install & select 'Buyi-idocky' & check '3D Background'"
-echo "After done configuration, Press any key to continue ..."
-read -n 1
+read -p "After done configuration, Press any key to continue ..."
 
 echo ""
 echo "To install Mac OS X Lion Theme, Icons and cursors ..."
 sudo apt-get install mac-ithemes-v3 mac-icons-v3 unity-tweak-tool
 echo "Config theme, icons and cursors ..."
 echo "Unity Tweak Tool -> Theme -> Mbuntu-ac & Icons -> Mbuntu-osx & Cursor -> Mac-cursors"
-echo "After done configuration, Press any key to continue ..."
-read -n 1
+read -p "After done configuration, Press any key to continue ..."
 
 echo ""
 echo "To Apply MBuntu Splash ..."
@@ -79,8 +76,7 @@ echo ""
 echo "To Install Monochrome icons for Libreoffice ..."
 sudo apt-get install libreoffice-style-sifr
 echo "'Tools' > 'Options' > 'LibreOffice' > 'View' and select 'Sifr' under 'Icon size and style'. "
-echo "After done configuration, Press any key to continue ..."
-read -n 1 
+read -p "After done configuration, Press any key to continue ..."
 
 echo ""
 echo "To Install Mac Fonts into /usr/share/fonts/mac"
