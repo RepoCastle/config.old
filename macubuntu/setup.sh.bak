@@ -42,7 +42,7 @@ echo "Done applying MBuntu splash!"
 
 echo ""
 echo "To Install MacBuntu theme for LightDM ..."
-sudo apt-get install mbuntu-lightdm-v3
+# sudo apt-get install mbuntu-lightdm-v3
 echo "Done installing MacBuntu theme for LightDM!"
 
 echo ""
