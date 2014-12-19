@@ -91,7 +91,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+" Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Align'
 Plugin 'Vim-R-plugin'
 
