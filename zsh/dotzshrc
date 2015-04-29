@@ -82,8 +82,10 @@ export JAVA_HOME=/opt/java/current
 export GRADLE_HOME=/opt/gradle/current
 export GRAILS_HOME=/opt/grails/current
 
+export ANDROID_SDK=/opt/google/android-sdk/current
 export IDEA_HOME=/opt/IntelliJ/idea/current
+export WEBSTORM_HOME=/opt/IntelliJ/WebStorm/current
 
-export PATH=$GRADLE_HOME/bin:$JAVA_HOME/bin:$IDEA_HOME/bin:$GRAILS_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$JAVA_HOME/bin:$IDEA_HOME/bin:$GRAILS_HOME/bin:$ANDROID_SDK/tools:$WEBSTORM_HOME/bin:$PATH
 
 export EDITOR=vim
