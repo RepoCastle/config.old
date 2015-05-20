@@ -85,7 +85,11 @@ export GRAILS_HOME=/opt/grails/current
 export ANDROID_SDK=/opt/google/android-sdk/current
 export IDEA_HOME=/opt/IntelliJ/idea/current
 export WEBSTORM_HOME=/opt/IntelliJ/WebStorm/current
+export VSCODE_HOME=/opt/microsoft/VSCode
 
-export PATH=$GRADLE_HOME/bin:$JAVA_HOME/bin:$IDEA_HOME/bin:$GRAILS_HOME/bin:$ANDROID_SDK/tools:$WEBSTORM_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$JAVA_HOME/bin:$IDEA_HOME/bin:$GRAILS_HOME/bin:$ANDROID_SDK/tools:$WEBSTORM_HOME/bin:$VSCODE_HOME:$PATH
 
 export EDITOR=vim
+
+autoload predict-on
+predict-on
