@@ -1,0 +1,11 @@
+org.jetbrains.idea.maven.ext
+org.jetbrains.android
+com.intellij.jboss.arquillian
+org.jetbrains.idea.maven
+CVS
+hg4idea
+AntSupport
+PerforceDirectPlugin
+ClearcasePlugin
+Subversion
+TFS

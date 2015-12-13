@@ -1,0 +1,59 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type-temp">
+      <project id="ribosome" values="Application" collectionTime="1449970074603" />
+    </group>
+    <group name="Git">
+      <project id="ribosome" values="config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,config.warn.about.crlf.enabled,config.push.autoupdate.disabled,config.force.push.enabled,data.local.branches.count.1,config.warn.about.detached.enabled,config.repo.sync.NOT_DECIDED,data.remote.branches.count.2+,data.remotes.in.project.1,config.ssh.enabled,config.save.policy.STASH,config.push.update.all.roots.enabled" collectionTime="1449970074857" />
+    </group>
+    <group name="vcs">
+      <project id="ribosome" values="Git" collectionTime="1449970074602" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="ribosome" values="ECMAScript 5.1" collectionTime="1449970074859" />
+    </group>
+    <group name="libraries">
+      <project id="ribosome" values="CDI" collectionTime="1449970074849" />
+    </group>
+    <group name="file-type">
+      <project id="ribosome" values="UNKNOWN,Groovy,Images,Properties,Native,XML,PLAIN_TEXT,JSON,IDEA_MODULE,JAVA,YAML,VTL" collectionTime="1449970074811" />
+    </group>
+    <group name="module type">
+      <project id="ribosome" values="JAVA_MODULE" collectionTime="1449970074603" />
+    </group>
+    <group name="language-level">
+      <project id="ribosome" values="JDK_1_7" collectionTime="1449970074855" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="ribosome" values="Project,Project" collectionTime="1449970074859" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="execute.Application.Run" count="2" />
+      <entry feature="ide.settings.ActionScript" count="1" />
+      <entry feature="ide.settings.Appearance" count="7" />
+      <entry feature="ide.settings.CSS" count="1" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="1" />
+      <entry feature="ide.settings.Console_Font" count="5" />
+      <entry feature="ide.settings.Font" count="21" />
+      <entry feature="ide.settings.GSP" count="1" />
+      <entry feature="ide.settings.Groovy" count="1" />
+      <entry feature="ide.settings.HTML" count="1" />
+      <entry feature="ide.settings.JSON" count="1" />
+      <entry feature="ide.settings.JSP" count="1" />
+      <entry feature="ide.settings.Java" count="1" />
+      <entry feature="ide.settings.JavaScript" count="1" />
+      <entry feature="ide.settings.Less" count="1" />
+      <entry feature="ide.settings.Other_File_Types" count="1" />
+      <entry feature="ide.settings.SCSS" count="1" />
+      <entry feature="ide.settings.Sass" count="1" />
+      <entry feature="ide.settings.Stylus" count="1" />
+      <entry feature="ide.settings.TypeScript" count="1" />
+      <entry feature="ide.settings.Velocity" count="1" />
+      <entry feature="ide.settings.XML" count="1" />
+      <entry feature="ideaapp.started" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="1" />
+    </counts>
+  </component>
+</application>
