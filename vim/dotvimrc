@@ -17,14 +17,14 @@ Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
 Bundle 'taglist.vim'
 Bundle 'ervandew/supertab'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Align'
-Plugin 'Vim-R-plugin'
-Bundle 'tpope/vim-rails'
-Bundle 'airblade/vim-rooter'
+" Plugin 'Vim-R-plugin'
+" Bundle 'tpope/vim-rails'
+" Bundle 'airblade/vim-rooter'
 call vundle#end()            " required
 
 filetype plugin indent on    " required

@@ -91,5 +91,5 @@ export PATH=$GRADLE_HOME/bin:$JAVA_HOME/bin:$IDEA_HOME/bin:$GRAILS_HOME/bin:$AND
 
 export EDITOR=vim
 
-autoload predict-on
-predict-on
+# autoload predict-on
+# predict-on
