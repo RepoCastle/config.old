@@ -23,9 +23,9 @@ Bundle 'ervandew/supertab'
 Plugin 'honza/vim-snippets'
 " Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Align'
-Plugin 'Vim-R-plugin'
-Bundle 'tpope/vim-rails'
-Bundle 'airblade/vim-rooter'
+" Plugin 'Vim-R-plugin'
+" Bundle 'tpope/vim-rails'
+" Bundle 'airblade/vim-rooter'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
