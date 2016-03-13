@@ -6,7 +6,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Bundle 'plasticboy/vim-markdown'
+" Bundle 'plasticboy/vim-markdown'
 Bundle "kien/ctrlp.vim"
 Bundle 'flazz/vim-colorschemes'
 Bundle "tpope/vim-surround"
@@ -17,8 +17,9 @@ Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
 Bundle 'taglist.vim'
 Bundle 'ervandew/supertab'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'SirVer/ultisnips'
+" Plugin 'artur-shaik/vim-javacomplete2'
+" Bundle 'Valloric/YouCompleteMe'
+" Bundle 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Align'
