@@ -94,3 +94,5 @@ export EDITOR=vim
 
 # autoload predict-on
 # predict-on
+
+export DISPLAY=:0.0
